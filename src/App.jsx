@@ -16,8 +16,6 @@ const App = () => {
     const [stack, setStack] = useState("")
 
     const items = words(stack, /[^-^+^*^/]+/g)
-    // Es similar a un if
-    // (esVerdadero) ? (resultadoPorVerdadero) : (resultadoPorFalso)
     const value = items.length > 0 ? items[items.length-1] : "0";
 
     console.log("Renderización de App", value)
